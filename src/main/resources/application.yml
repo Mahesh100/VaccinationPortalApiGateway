@@ -1,0 +1,11 @@
+server:
+  port: 8000
+
+
+zuul:
+  routes:
+    CITIZEN-SERVICE:
+      url: http://localhost:8081
+
+    eureka-service:
+      url: http://localhost:8761
